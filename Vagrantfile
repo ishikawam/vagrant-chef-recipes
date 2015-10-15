@@ -82,6 +82,7 @@ Vagrant.configure(2) do |config|
     chef.add_recipe "git"
     chef.add_recipe "zsh"
     chef.add_recipe "adduser"
+    chef.add_recipe "language-pack-ja"
   end
 
 
