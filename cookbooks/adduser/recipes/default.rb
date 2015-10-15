@@ -13,8 +13,15 @@ user "m_ishikawa" do
   action :create
 end
 
-group "wheel" do
+directory "/home/m_ishikawa" do
+  owner "m_ishikawa"
+  group "admin"
+  mode 00755
+  action :create
+end
+
+group "admin" do
   action [:modify]
-  members ["hoge"]
+  members ["m_ishikawa"]
   append true
 end
